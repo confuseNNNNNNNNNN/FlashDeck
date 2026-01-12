@@ -1,0 +1,23 @@
+name: universal_flashcards
+description: A hybrid Python-Flutter flashcard app.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # The Bridge
+  serious_python: ^0.8.0
+  # Utilities
+  path_provider: ^2.1.2
+  # Rendering
+  flutter_math_fork: ^0.7.2  # For LaTeX equations
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/app_database.db  # The seed database
+    - backend/                # Bundles your Python code
